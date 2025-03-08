@@ -1,0 +1,128 @@
+/* Resetting and Box-Sizing for Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for a soft feel */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Content Styling */
+.main {
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Styling for Different News Types */
+.movie-news {
+    background-color: #f0f8ff; /* Light blue background for movie news */
+    border-left: 5px solid #00bfff; /* Blue left border for movie news */
+}
+
+.sports-news {
+    background-color: #e6f7ff; /* Light cyan background for sports news */
+    border-left: 5px solid #28a745; /* Green left border for sports news */
+}
+
+.business-news {
+    background-color: #fff3e6; /* Light orange background for business news */
+    border-left: 5px solid #ff8c00; /* Orange left border for business news */
+}
+
+/* Image Styling */
+.news-images {
+    display: flex;          /* Use flexbox for layout */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;    /* Center images horizontally */
+}
+
+.news-images img {
+    width: 80%;             /* Set width to 80% of the parent container */
+    max-width: 300px;       /* Limit the maximum width of the images */
+    height: auto;           /* Maintain the aspect ratio */
+    border: 2px solid #ddd; /* Light border around the images */
+    border-radius: 8px;     /* Rounded corners for images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around images */
+    margin: 10px 0;         /* Space between the images */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Hover Effect for Images */
+.news-images img:hover {
+    transform: scale(1.05); /* Slight zoom effect when hovered */
+}
+
+/* Navigation Styling */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0044cc;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #ff5e5e; /* Hover color change */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Mobile-Friendly Adjustments */
+    header {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+}

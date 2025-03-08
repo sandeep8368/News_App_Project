@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="main">
+        <h1>Current news :- {{msg1}} <br> <br>
+        Breaking news :- {{msg2}}</h1>
+    
+    <ul>
+        <li><a href="/home/movie">Movies News</a></li>
+        <li><a href="/home/sports">Sports News</a></li>
+        <li><a href="/home/business">Business News</a></li>
+    </ul>
+    <img src="{% static 'images/new1.jpg'%}" alt="">
+    <img src="{% static 'images/new2.jpg'%}" alt="">
+    
+    </div>
+</body>
+</html>

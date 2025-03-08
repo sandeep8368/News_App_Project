@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="main">
+        <h1>Current news :- {{msg1}} <br> <br>
+        Breaking news :- {{msg2}}</h1>
+    </div>
+    {% if type == "movie" %}
+        <img src="{% static 'images/mov1.jpg'%}" alt="">
+        <img src="{% static 'images/mov2.jpg'%}" alt="">
+    {% elif type == "sports" %}
+        <img src="{% static 'images/sport1.jpg'%}" alt="">
+        <img src="{% static 'images/sport2.jpg'%}" alt="">
+    {% elif type == "business" %}
+        <img src="{% static 'images/buss1.jpg'%}" alt="">
+        <img src="{% static 'images/buss2.jpg'%}" alt="">
+    {% endif %}
+</body>
+</html>
